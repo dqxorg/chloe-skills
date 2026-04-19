@@ -67,6 +67,21 @@ flowchart LR
 4. Execute pipeline from [USAGE-PLAYBOOK.md](USAGE-PLAYBOOK.md).
 5. Validate output against [schemas/agent-response.schema.json](schemas/agent-response.schema.json) before returning to users.
 
+## Copilot Chat vs Agent Mode
+- Chat mode:
+Use [.github/prompts/chloe-skills-agent.prompt.md](.github/prompts/chloe-skills-agent.prompt.md) when you want structured advisory output in one conversation.
+- Agent mode:
+Use [.github/prompts/chloe-skills-agent-mode.prompt.md](.github/prompts/chloe-skills-agent-mode.prompt.md) when you want Copilot Agent to run end-to-end workflow steps autonomously.
+- Shared policy:
+[.github/copilot-instructions.md](.github/copilot-instructions.md) applies in both modes.
+
+## How To Run In Copilot Agent
+1. Open this repository in VS Code.
+2. Open Copilot Chat and switch to Agent mode.
+3. Attach or reference [.github/prompts/chloe-skills-agent-mode.prompt.md](.github/prompts/chloe-skills-agent-mode.prompt.md).
+4. Provide request payload using [examples/request.sample.json](examples/request.sample.json).
+5. Require output validation using [schemas/agent-response.schema.json](schemas/agent-response.schema.json).
+
 ## JSON-First Runtime Contract
 Use this request format:
 - See [examples/request.sample.json](examples/request.sample.json)
