@@ -1,0 +1,21 @@
+{
+  "target_role": "ai_engineer",
+  "current_level": "intermediate",
+  "team_stack": ["python", "aws", "postgresql"],
+  "business_goal": "Reduce support ticket volume by 25 percent using AI-assisted triage.",
+  "timeline_days": 90,
+  "constraints": [
+    "No new headcount",
+    "Moderate budget",
+    "Must comply with internal security policy"
+  ],
+  "current_evidence": [
+    "Two production automations shipped",
+    "No model monitoring in place"
+  ],
+  "organization_context": {
+    "industry": "financial_services",
+    "regulated": true,
+    "region": "ID"
+  }
+}

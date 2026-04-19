@@ -209,3 +209,99 @@ roles:
       - vector_database
       - orchestration_frameworks
       - model_monitoring_tools
+
+  devops_sre:
+    target_level: advanced
+    core_skills:
+      - ci_cd_architecture
+      - infrastructure_as_code
+      - container_orchestration
+      - reliability_engineering
+      - incident_management
+      - observability_engineering
+      - release_engineering
+      - cloud_operations
+      - security_shift_left
+      - automation_platforms
+    tools:
+      - github_actions_or_gitlab_ci
+      - terraform
+      - kubernetes
+      - prometheus_and_grafana
+      - cloud_provider
+
+  cloud_engineer:
+    target_level: advanced
+    core_skills:
+      - cloud_architecture_basics
+      - identity_and_access_cloud
+      - networking_in_cloud
+      - compute_storage_database_services
+      - cost_optimization_finops
+      - cloud_security_controls
+      - infrastructure_as_code
+      - backup_and_resilience_cloud
+      - monitoring_and_alerting_cloud
+      - migration_patterns
+    tools:
+      - aws_or_azure_or_gcp
+      - terraform_or_bicep
+      - cloud_monitoring_tools
+      - cloud_cost_management_tools
+
+  it_support_service_desk:
+    target_level: advanced
+    core_skills:
+      - incident_intake_and_triage
+      - itil_fundamentals
+      - ticket_lifecycle_management
+      - root_cause_escalation
+      - endpoint_and_identity_basics
+      - knowledge_base_management
+      - customer_communication
+      - service_level_management
+      - shift_handover_practices
+      - automation_for_repetitive_tickets
+    tools:
+      - service_desk_platform
+      - endpoint_management_tools
+      - remote_support_tools
+      - knowledge_base_platform
+
+  data_analyst:
+    target_level: advanced
+    core_skills:
+      - sql_and_data_extraction
+      - data_cleaning_and_preparation
+      - dashboard_design
+      - exploratory_data_analysis
+      - statistical_reasoning
+      - business_storytelling
+      - experimentation_basics
+      - data_quality_validation
+      - stakeholder_requirement_translation
+      - self_service_analytics_enablement
+    tools:
+      - sql_engine
+      - bi_tool
+      - python_or_r
+      - spreadsheet_tools
+
+  security_operations_soc:
+    target_level: advanced
+    core_skills:
+      - alert_triage
+      - threat_detection_engineering
+      - log_analysis_and_correlation
+      - incident_response_playbooks
+      - threat_hunting_basics
+      - endpoint_detection_and_response
+      - siem_operations
+      - vulnerability_contextualization
+      - digital_forensics_basics
+      - reporting_and_post_incident_review
+    tools:
+      - siem_platform
+      - edr_platform
+      - threat_intelligence_feeds
+      - ticketing_and_case_management

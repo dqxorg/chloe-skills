@@ -82,6 +82,42 @@ roles:
       - https://roadmap.sh/machine-learning
       - https://roadmap.sh/backend
 
+  devops_sre:
+    direct_links:
+      - https://roadmap.sh/devops
+    supporting_links:
+      - https://roadmap.sh/kubernetes
+      - https://roadmap.sh/docker
+      - https://roadmap.sh/linux
+
+  cloud_engineer:
+    direct_links: []
+    supporting_links:
+      - https://roadmap.sh/aws
+      - https://roadmap.sh/azure
+      - https://roadmap.sh/devops
+
+  it_support_service_desk:
+    direct_links: []
+    supporting_links:
+      - https://roadmap.sh/linux
+      - https://roadmap.sh/computer-science
+      - https://roadmap.sh/git-github
+
+  data_analyst:
+    direct_links: []
+    supporting_links:
+      - https://roadmap.sh/sql
+      - https://roadmap.sh/data-analyst
+      - https://roadmap.sh/excel
+
+  security_operations_soc:
+    direct_links: []
+    supporting_links:
+      - https://roadmap.sh/cyber-security
+      - https://roadmap.sh/linux
+      - https://roadmap.sh/devops
+
 notes:
   - Some role names may vary on roadmap.sh over time.
   - When a direct role roadmap is unavailable, use closest adjacent topic links.

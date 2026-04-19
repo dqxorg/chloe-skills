@@ -149,3 +149,73 @@ paths:
       - Ship one production-grade AI feature.
       - Improve model quality using feedback loop.
       - Create AI risk register and mitigation controls.
+
+  devops_sre:
+    day_0_30:
+      - Baseline deployment, incident, and reliability metrics.
+      - Audit CI/CD and infrastructure-as-code coverage.
+      - Map critical services and ownership.
+    day_31_60:
+      - Improve pipeline reliability and lead time.
+      - Add golden signals dashboards and alert tuning.
+      - Run one incident simulation and retrospective.
+    day_61_90:
+      - Deliver one reliability improvement with measurable impact.
+      - Standardize runbooks and on-call readiness.
+      - Implement automated rollback or canary guardrails.
+
+  cloud_engineer:
+    day_0_30:
+      - Assess cloud landing zone, IAM, and network posture.
+      - Baseline cost, security, and availability indicators.
+      - Review backup and disaster recovery readiness.
+    day_31_60:
+      - Implement infrastructure-as-code for key resources.
+      - Optimize top cloud cost drivers with tagged ownership.
+      - Improve monitoring and policy compliance automation.
+    day_61_90:
+      - Complete one migration or modernization milestone.
+      - Reduce cloud risk and cost variance against baseline.
+      - Publish cloud operations standards for the team.
+
+  it_support_service_desk:
+    day_0_30:
+      - Analyze ticket categories, SLAs, and escalation paths.
+      - Standardize intake and triage checklist.
+      - Improve knowledge base coverage for frequent issues.
+    day_31_60:
+      - Automate responses for repetitive ticket patterns.
+      - Reduce mean time to resolution on top issue classes.
+      - Improve first-contact resolution through targeted coaching.
+    day_61_90:
+      - Establish service quality dashboard and review cadence.
+      - Reduce reopen rate and escalation defects.
+      - Harden handoff process with clear ownership rules.
+
+  data_analyst:
+    day_0_30:
+      - Align business questions with data definitions.
+      - Build baseline dashboard with trusted metrics.
+      - Profile data quality issues and remediation plan.
+    day_31_60:
+      - Deliver one decision-grade analysis tied to business KPI.
+      - Improve dashboard adoption with stakeholder enablement.
+      - Introduce validation checks for recurring reports.
+    day_61_90:
+      - Create repeatable analysis pipeline for priority domain.
+      - Improve metric consistency across teams.
+      - Publish analyst playbook for experiment and insight quality.
+
+  security_operations_soc:
+    day_0_30:
+      - Baseline detection coverage and incident response metrics.
+      - Review critical log sources and SIEM ingestion quality.
+      - Validate escalation runbooks and contact matrix.
+    day_31_60:
+      - Tune high-noise detection rules and reduce false positives.
+      - Improve response workflow with case enrichment automation.
+      - Run one tabletop exercise for high-priority threat scenario.
+    day_61_90:
+      - Reduce mean time to detect and respond measurably.
+      - Increase detection quality with threat hunting findings.
+      - Publish quarterly SOC improvement and risk trend report.

@@ -14,32 +14,40 @@ Why: this gives stable behavior first, then facts, then execution guidance, then
 
 ## 2) Recommended Agent Pipeline
 For each user request, force your orchestrator to run this pipeline:
-1. Intent parse
+1. Request validation
+- Validate incoming JSON payload with `schemas/agent-request.schema.json`.
+- If invalid, return validation error details and required fields.
+
+2. Intent parse
 - Extract target role, seniority, business goal, timeline, constraints.
 
-2. Role grounding
+3. Role grounding
 - Load only matching role section from skills matrix, learning paths, roadmap links, and rubric.
 - If role data is missing, return clarification request instead of guessing.
 
-3. Gap analysis
+4. Gap analysis
 - Compare current skills (user evidence) vs expected role competencies.
 - Rank top 5 gaps by business impact and risk.
 
-4. Plan generation
+5. Plan generation
 - Produce 30/60/90 plan from learning-paths.
 - Add concrete deliverables and measurable KPIs.
 
-5. Evidence check
+6. Evidence check
 - Map each recommendation to rubric evidence.
 - If no evidence path exists, label recommendation as low confidence.
 
-6. Safety and confidence gate
+7. Safety and confidence gate
 - Add confidence score: high, medium, low.
 - Add assumptions list.
 - Add unknowns list.
 
-7. Response output
+8. Response output
 - Return structured output template only (avoid free-form long answers unless asked).
+
+9. Response validation
+- Validate generated response JSON with `schemas/agent-response.schema.json`.
+- If invalid, auto-repair output before returning it.
 
 ## 3) Output Contract (Use Every Time)
 Require AI output in this strict structure:
@@ -97,6 +105,10 @@ Use this as user input shape for stable results:
 - timeline: 90 days
 - constraints: no new headcount, moderate budget
 - current_evidence: two production automations, no model monitoring yet
+
+JSON versions:
+- `examples/request.sample.json`
+- `examples/response.sample.json`
 
 ## 8) Quality Checklist (Before Returning Response)
 Your orchestrator should validate:

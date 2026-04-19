@@ -1,0 +1,82 @@
+{
+  "role_summary": "AI Engineer role requires delivery of safe, measurable AI features with clear quality and cost controls.",
+  "current_vs_target_gaps": [
+    {
+      "skill": "model_evaluation",
+      "current": "ad hoc testing",
+      "target": "standardized offline and online evaluation",
+      "impact": "high"
+    },
+    {
+      "skill": "mlops_and_observability",
+      "current": "no production monitoring",
+      "target": "latency, quality, and cost dashboards",
+      "impact": "high"
+    }
+  ],
+  "top_priorities": [
+    "Define and track quality metrics for retrieval and response accuracy",
+    "Implement model and prompt versioning with rollback",
+    "Deploy monitoring for latency, token cost, and user feedback",
+    "Harden safety controls and red-team testing",
+    "Ship one production AI feature with controlled rollout"
+  ],
+  "execution_plan_30_60_90": {
+    "day_0_30": [
+      "Define use case boundaries and success criteria",
+      "Create evaluation dataset and baseline scoring"
+    ],
+    "day_31_60": [
+      "Implement retrieval and prompt tuning cycle",
+      "Add observability and alert thresholds"
+    ],
+    "day_61_90": [
+      "Release production feature with canary rollout",
+      "Run post-release quality and cost review"
+    ]
+  },
+  "evidence_required": [
+    "Architecture decision records",
+    "Evaluation reports",
+    "Monitoring dashboard snapshots",
+    "Release and incident notes"
+  ],
+  "metrics_and_targets": [
+    {
+      "metric": "support_ticket_volume",
+      "target": "-25%",
+      "horizon_days": 90
+    },
+    {
+      "metric": "response_grounding_score",
+      "target": ">= 0.85",
+      "horizon_days": 60
+    },
+    {
+      "metric": "p95_response_latency_seconds",
+      "target": "<= 3.5",
+      "horizon_days": 90
+    }
+  ],
+  "risks_and_mitigations": [
+    {
+      "risk": "Insufficient ground truth data for evaluation",
+      "mitigation": "Create labeled validation set with SME review"
+    },
+    {
+      "risk": "Prompt drift after model updates",
+      "mitigation": "Lock prompt versions and regression tests"
+    }
+  ],
+  "confidence_and_assumptions": {
+    "confidence": "medium",
+    "assumptions": [
+      "Current systems can expose ticket metadata safely",
+      "Stakeholders can review weekly pilot outputs"
+    ],
+    "unknowns": [
+      "Final production traffic patterns",
+      "Legal review lead time"
+    ]
+  }
+}

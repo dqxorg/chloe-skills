@@ -294,3 +294,143 @@ rubrics:
         evidence:
           - red_team_or_safety_tests
           - policy_and_guardrail_implementation
+
+  devops_sre:
+    capabilities:
+      delivery_automation:
+        expected_score: 3
+        evidence:
+          - pipeline_reliability_metrics
+          - deployment_frequency_trends
+      reliability_engineering:
+        expected_score: 3
+        evidence:
+          - sla_slo_reports
+          - incident_reduction_trends
+      observability:
+        expected_score: 3
+        evidence:
+          - golden_signals_dashboards
+          - alert_noise_reduction
+      infrastructure_as_code:
+        expected_score: 3
+        evidence:
+          - reviewed_iac_changes
+          - drift_or_policy_compliance_reports
+      operational_readiness:
+        expected_score: 3
+        evidence:
+          - runbook_quality_reviews
+          - on_call_readiness_assessment
+
+  cloud_engineer:
+    capabilities:
+      cloud_platform_design:
+        expected_score: 3
+        evidence:
+          - reference_architecture_artifacts
+          - service_selection_decision_logs
+      cloud_security_and_iam:
+        expected_score: 3
+        evidence:
+          - iam_audit_results
+          - policy_compliance_trends
+      cost_and_capacity:
+        expected_score: 3
+        evidence:
+          - finops_reports
+          - cost_optimization_implementation_logs
+      automation_and_operations:
+        expected_score: 3
+        evidence:
+          - iac_coverage_ratio
+          - change_success_rate
+      resiliency_and_recovery:
+        expected_score: 3
+        evidence:
+          - dr_test_results
+          - backup_restore_evidence
+
+  it_support_service_desk:
+    capabilities:
+      intake_and_triage:
+        expected_score: 3
+        evidence:
+          - categorized_ticket_accuracy
+          - triage_sla_compliance
+      resolution_effectiveness:
+        expected_score: 3
+        evidence:
+          - first_contact_resolution_rate
+          - mean_time_to_resolution_trend
+      escalation_and_handoffs:
+        expected_score: 3
+        evidence:
+          - escalation_quality_reviews
+          - handoff_error_reduction
+      knowledge_management:
+        expected_score: 3
+        evidence:
+          - kb_article_usage_metrics
+          - repeat_issue_deflection_rate
+      customer_experience:
+        expected_score: 3
+        evidence:
+          - csat_trends
+          - ticket_reopen_rate_reduction
+
+  data_analyst:
+    capabilities:
+      data_query_and_preparation:
+        expected_score: 3
+        evidence:
+          - reproducible_sql_or_notebooks
+          - data_preparation_quality_checks
+      analytical_reasoning:
+        expected_score: 3
+        evidence:
+          - hypothesis_driven_analysis_reports
+          - decision_support_artifacts
+      visualization_and_storytelling:
+        expected_score: 3
+        evidence:
+          - dashboard_adoption_metrics
+          - stakeholder_feedback_on_clarity
+      metric_governance:
+        expected_score: 3
+        evidence:
+          - metric_dictionary_updates
+          - consistency_audit_results
+      experimentation_support:
+        expected_score: 2
+        evidence:
+          - experiment_readouts
+          - recommendation_implementation_outcomes
+
+  security_operations_soc:
+    capabilities:
+      detection_operations:
+        expected_score: 3
+        evidence:
+          - detection_rule_performance_reports
+          - true_positive_rate_trends
+      incident_response_execution:
+        expected_score: 3
+        evidence:
+          - incident_timeline_quality
+          - containment_and_recovery_metrics
+      log_and_case_management:
+        expected_score: 3
+        evidence:
+          - siem_data_quality_reports
+          - case_backlog_health
+      threat_hunting_and_proactive_defense:
+        expected_score: 2
+        evidence:
+          - hunting_reports
+          - newly_discovered_detection_use_cases
+      governance_and_reporting:
+        expected_score: 3
+        evidence:
+          - monthly_security_operations_reports
+          - audit_or_control_evidence_quality
