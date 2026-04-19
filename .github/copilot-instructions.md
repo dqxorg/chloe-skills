@@ -13,15 +13,15 @@ Use this repository as the source of truth for role capability guidance.
 - Mark unsupported statements as assumptions.
 
 ## Required Output Contract
-Always structure answers in this order:
-1. Role Summary
-2. Current vs Target Gaps
-3. Top 5 Priorities
-4. 30/60/90 Execution Plan
-5. Evidence Required
-6. Metrics and Targets
-7. Risks and Mitigations
-8. Confidence and Assumptions
+Always return JSON that matches the response schema fields:
+1. role_summary
+2. current_vs_target_gaps
+3. top_priorities
+4. execution_plan_30_60_90
+5. evidence_required
+6. metrics_and_targets
+7. risks_and_mitigations
+8. confidence_and_assumptions
 
 ## JSON Contract
 - Validate request shape with [schemas/agent-request.schema.json](../schemas/agent-request.schema.json).

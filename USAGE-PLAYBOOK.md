@@ -124,3 +124,9 @@ When ready, expand to:
 2. Auto scoring service from role-rubrics
 3. Team-level capability heatmap
 4. Quarterly workforce planning reports
+
+## 10) Local Enforcement Commands
+Run these in repository root:
+1. npm install
+2. npm run run:enforcer
+3. npm run quality

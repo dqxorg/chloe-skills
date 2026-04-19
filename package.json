@@ -1,0 +1,18 @@
+{
+  "name": "chloe-skills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Runtime enforcement and validation toolkit for Chloe Skills Agent",
+  "type": "module",
+  "scripts": {
+    "validate:examples": "node scripts/validate-examples.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "quality": "npm run validate:examples && npm run check:links",
+    "run:enforcer": "node runtime/enforcer.mjs --request examples/request.sample.json --response examples/response.sample.json"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "js-yaml": "^4.1.0"
+  }
+}

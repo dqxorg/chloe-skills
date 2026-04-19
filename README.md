@@ -68,6 +68,18 @@ flowchart LR
 4. Execute pipeline from [USAGE-PLAYBOOK.md](USAGE-PLAYBOOK.md).
 5. Validate output against [schemas/agent-response.schema.json](schemas/agent-response.schema.json) before returning to users.
 
+## Runtime Enforcement (Executable)
+This repository includes executable enforcement to make behavior deterministic:
+1. Install dependencies with npm install.
+2. Run end-to-end validation: npm run run:enforcer
+3. Run quality gates locally: npm run quality
+
+Runtime files:
+- [runtime/enforcer.mjs](runtime/enforcer.mjs): request and response schema validation, role presence checks, and policy checks.
+- [scripts/validate-examples.mjs](scripts/validate-examples.mjs): validates sample JSON and role coverage.
+- [scripts/check-links.mjs](scripts/check-links.mjs): verifies local markdown links.
+- [.github/workflows/quality.yml](.github/workflows/quality.yml): CI checks on push and pull request.
+
 ## Documentation Usage Guide
 Use this reading sequence to implement correctly:
 1. Start with [README.md](README.md) for architecture and operating model.
