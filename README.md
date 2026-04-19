@@ -40,6 +40,7 @@ To make this more complete for most IT organizations:
 1. Load `agent/system-prompt.md` as system instructions in your AI platform.
 2. Provide `data/skills-matrix.yaml`, `data/roadmap-links.yaml`, and `data/learning-paths.yaml` as reference context.
 3. Ask role-specific questions using examples from `examples/sample-requests.md`.
+4. Implement production workflow and anti-hallucination controls from `USAGE-PLAYBOOK.md`.
 
 ## Example Outcomes
 - Skill gap report for a specific employee and target role.
