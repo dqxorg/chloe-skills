@@ -25,6 +25,7 @@ This repository contains a role-based skills intelligence pack that can be used 
 - `data/skills-matrix.yaml`: role-based competencies, tools, and proficiency targets
 - `data/roadmap-links.yaml`: roadmap.sh-aligned role and topic links
 - `data/learning-paths.yaml`: 30-60-90 day onboarding and upskilling plans
+- `data/role-rubrics.yaml`: evidence-based scoring rubric for role assessments
 - `examples/sample-requests.md`: example prompts for HR, managers, and ICs
 
 ## Suggested Additional Roles
