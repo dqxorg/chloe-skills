@@ -67,6 +67,14 @@ flowchart LR
 4. Execute pipeline from [USAGE-PLAYBOOK.md](USAGE-PLAYBOOK.md).
 5. Validate output against [schemas/agent-response.schema.json](schemas/agent-response.schema.json) before returning to users.
 
+## Documentation Usage Guide
+Use this reading sequence to implement correctly:
+1. Start with [README.md](README.md) for architecture and operating model.
+2. Follow [USAGE-PLAYBOOK.md](USAGE-PLAYBOOK.md) for workflow and anti-hallucination controls.
+3. Apply repository policy from [.github/copilot-instructions.md](.github/copilot-instructions.md).
+4. Run prompts from [.github/prompts/chloe-skills-agent.prompt.md](.github/prompts/chloe-skills-agent.prompt.md) or [.github/prompts/chloe-skills-agent-mode.prompt.md](.github/prompts/chloe-skills-agent-mode.prompt.md).
+5. Validate I/O contracts with [schemas/agent-request.schema.json](schemas/agent-request.schema.json) and [schemas/agent-response.schema.json](schemas/agent-response.schema.json).
+
 ## Copilot Chat vs Agent Mode
 - Chat mode:
 Use [.github/prompts/chloe-skills-agent.prompt.md](.github/prompts/chloe-skills-agent.prompt.md) when you want structured advisory output in one conversation.

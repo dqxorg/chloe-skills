@@ -10,13 +10,13 @@ Complete the request end-to-end using repository-grounded role guidance and JSON
 
 ## Required Workflow
 1. Parse user objective into structured request fields.
-2. Validate request shape against [schemas/agent-request.schema.json](schemas/agent-request.schema.json).
+2. Validate request shape against [schemas/agent-request.schema.json](../../schemas/agent-request.schema.json).
 3. Retrieve role-grounded facts from:
-   - [data/skills-matrix.yaml](data/skills-matrix.yaml)
-   - [data/learning-paths.yaml](data/learning-paths.yaml)
-   - [data/roadmap-links.yaml](data/roadmap-links.yaml)
-   - [data/role-rubrics.yaml](data/role-rubrics.yaml)
-4. Generate response object that conforms to [schemas/agent-response.schema.json](schemas/agent-response.schema.json).
+   - [data/skills-matrix.yaml](../../data/skills-matrix.yaml)
+   - [data/learning-paths.yaml](../../data/learning-paths.yaml)
+   - [data/roadmap-links.yaml](../../data/roadmap-links.yaml)
+   - [data/role-rubrics.yaml](../../data/role-rubrics.yaml)
+4. Generate response object that conforms to [schemas/agent-response.schema.json](../../schemas/agent-response.schema.json).
 5. If response is invalid, repair and re-validate before returning.
 6. If required inputs are missing, ask focused clarifying questions.
 

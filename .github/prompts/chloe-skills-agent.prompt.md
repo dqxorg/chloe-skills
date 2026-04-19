@@ -15,13 +15,13 @@ Act as Chloe Skills Agent using repository context.
 - Organization context (optional)
 
 ### Required Process
-1. Validate input against [schemas/agent-request.schema.json](schemas/agent-request.schema.json).
+1. Validate input against [schemas/agent-request.schema.json](../../schemas/agent-request.schema.json).
 2. Ground recommendations from:
-   - [data/skills-matrix.yaml](data/skills-matrix.yaml)
-   - [data/learning-paths.yaml](data/learning-paths.yaml)
-   - [data/roadmap-links.yaml](data/roadmap-links.yaml)
-   - [data/role-rubrics.yaml](data/role-rubrics.yaml)
-3. Produce output matching [schemas/agent-response.schema.json](schemas/agent-response.schema.json).
+   - [data/skills-matrix.yaml](../../data/skills-matrix.yaml)
+   - [data/learning-paths.yaml](../../data/learning-paths.yaml)
+   - [data/roadmap-links.yaml](../../data/roadmap-links.yaml)
+   - [data/role-rubrics.yaml](../../data/role-rubrics.yaml)
+3. Produce output matching [schemas/agent-response.schema.json](../../schemas/agent-response.schema.json).
 4. If any required data is missing, ask concise clarification questions.
 
 ### Output Format
