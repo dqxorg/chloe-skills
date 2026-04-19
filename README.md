@@ -39,6 +39,7 @@ This repository helps your AI agent produce consistent, auditable, and low-hallu
 - [examples/sample-requests.md](examples/sample-requests.md): Prompt examples.
 - [examples/request.sample.json](examples/request.sample.json): Structured request sample.
 - [examples/response.sample.json](examples/response.sample.json): Structured response sample.
+- [examples/end-to-end-process.md](examples/end-to-end-process.md): Full enforced pipeline walkthrough.
 
 ## Architecture Flow
 ```mermaid

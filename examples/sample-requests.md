@@ -26,3 +26,7 @@ Request: Build a monthly learning and project roadmap.
 ## 5) Risk-Based IT Upskilling
 Context: Regulated industry with strict security and audit controls.
 Request: Prioritize role upskilling by risk and business impact.
+
+## End-to-End Reference
+For full workflow (validation, grounding, policy checks, and regenerate loop), see:
+- [end-to-end-process.md](end-to-end-process.md)
